@@ -399,10 +399,14 @@ sales-knowledge-ai-agent/
 ├── app.py
 ├── requirements.txt
 ├── README.md
+├── LICENSE
 ├── .gitignore
 ├── data/
 │   └── documents/
 │       └── Politicas_Internas_NexaShip.pdf
+├── images/
+│   ├── deploy_oci.png
+│   └── consulta_agente.png
 └── notebooks/
     └── 01_mvp_rag.ipynb
 ```
@@ -531,29 +535,33 @@ A continuación se presentan algunos ejemplos de consultas realizadas al agente 
 
 ### Ejemplo 1
 
-```text
-¿Qué tipos de datos personales recopila NexaShip y con qué finalidad?
+**Pregunta**
+
+> ¿Qué tipos de datos personales recopila NexaShip y con qué finalidad?
 
 **Respuesta**
 
-Según la evidencia documental, NexaShip recopila "información de prospectos y clientes" (Página 6).
+Según la evidencia documental, NexaShip recopila **información de prospectos y clientes** (Página 6).
 
-La finalidad de esta recopilación es para "la finalidad comercial u operativa correspondiente" (Página 6), y para gestionar "oportunidades comerciales, solicitudes de prospectos y clientes, negociaciones" (Página 3).
+La finalidad de esta recopilación es la **gestión comercial y operativa correspondiente**, incluyendo oportunidades comerciales, solicitudes de prospectos y clientes, y procesos de negociación (Páginas 3 y 6).
 
-La evidencia proporcionada no detalla los tipos específicos de datos personales que se incluyen dentro de la categoría de "información de prospectos y clientes".
-```
+La documentación no especifica los tipos concretos de datos personales incluidos dentro de la categoría de "información de prospectos y clientes".
 
-###  Ejemplo 2
+---
 
-```text
-¿Cuál es la política de trabajo remoto en NexaShip?
+### Ejemplo 2
+
+**Pregunta**
+
+> ¿Cuál es la política de trabajo remoto en NexaShip?
 
 **Respuesta**
 
-La evidencia documental proporcionada no contiene información sobre la política de trabajo remoto en NexaShip. El documento se centra en políticas internas relacionadas con la gestión comercial, negociación, tratamiento de información y escalamiento de consultas.
+La evidencia documental proporcionada **no contiene información** sobre la política de trabajo remoto en NexaShip.
 
-Fuente: páginas 2, 3, 4, 6.
-```
+El documento utilizado como fuente de conocimiento se centra en políticas relacionadas con la gestión comercial, negociación, tratamiento de información, protección de datos y procesos de escalamiento, por lo que el agente evita generar una respuesta sin respaldo documental.
+
+**Fuentes:** páginas 2, 3, 4 y 6.
 
 ---
 
